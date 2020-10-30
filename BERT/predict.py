@@ -85,13 +85,13 @@ def get_predictions(model, data_loader):
 
 
 #Reading MSMarco dev set queries (these queires do not have label)
-df = pd.read_csv("/home/amin-bigdeli/Projects/GBD_project/MSMarco/msmarco.csv")
+df = pd.read_csv("msmarco.csv")
 test_data_loader = create_data_loader(df, tokenizer, MAX_LEN, TEST_BATCH_SIZE)
 
 #Loading the fine-tuned model
 print("Loading the Model")
 model = BertForSequenceClassification.from_pretrained(PRE_TRAINED_MODEL_NAME, num_labels = 3)
-model.load_state_dict(torch.load("/mnt/sata_disk/amin-bigdeli/Projects/GBD_project/model_construction/Models_on_whole_dataset/Bert_FSC_all_v2.bin"))
+model.load_state_dict(torch.load("BERT_fine_tuned.bin"))
 model.to(device)
 print("Model Loaded Successfully")
 
@@ -105,4 +105,4 @@ prediction['female_probability'] = y_pred_probs[:, 0]
 prediction['male_probability'] = y_pred_probs[:, 1]
 prediction['neutral_probability'] = y_pred_probs[:, 2]
 prediction['prediction'] = y_pred
-prediction.to_csv("predictions/msmarco_predictions_by_BFSC_v2.csv", index = False)
+prediction.to_csv("predictions.csv", index = False)
