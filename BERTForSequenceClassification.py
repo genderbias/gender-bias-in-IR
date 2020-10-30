@@ -129,7 +129,7 @@ def get_predictions(model, data_loader):
       outputs = model(
         input_ids=input_ids,
         attention_mask=attention_mask,
-	    labels = targets
+	labels = targets
       )
       _, preds = torch.max(outputs[1], dim=1)
       query_texts.extend(texts)
