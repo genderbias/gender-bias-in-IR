@@ -1,3 +1,4 @@
+
 # importing libraries
 import numpy as np
 import torch
@@ -141,15 +142,13 @@ def get_predictions(model, data_loader):
   return query_texts, predictions, prediction_probs, real_values
 
 
-
-
-labelEncoder = LabelEncoder()
+#Fine-Tuning the BERT on the Dataset
 result = open("BERT_model.txt", "w")
 df = pd.read_csv("queries_gender_annotated.csv", names = ["query", "label"])
+labelEncoder = LabelEncoder()
 df['label'] = labelEncoder.fit_transform(df['label'])
 result.write("Shape of Dataset: {} \n".format(df.shape))
 wordlist = pd.read_csv("wordlist_gender_specific.csv")
-labelEncoder = LabelEncoder()
 wordlist['label'] = labelEncoder.fit_transform(wordlist['label'])
 df = pd.concat([df, wordlist], ignore_index = False)
 result.write("Shape of Dataset after concatination with wordlist: {} \n".format(df.shape))
