@@ -57,7 +57,7 @@ def create_data_loader(df, tokenizer, max_len, batch_size):
   return DataLoader(
     ds,
     batch_size = batch_size,
-    num_workers = 5
+    num_workers = 5 # num_workers should be 0 while running the code on CPU
   )
 
 #Prediction function
@@ -91,15 +91,11 @@ test_data_loader = create_data_loader(df, tokenizer, MAX_LEN, TEST_BATCH_SIZE)
 #Loading the fine-tuned model
 print("Loading the Model")
 model = BertForSequenceClassification.from_pretrained(PRE_TRAINED_MODEL_NAME, num_labels = 3)
-model.load_state_dict(torch.load("BERT_fine_tuned.bin"))
-model.to(device)
+model.load_state_dict(torch.load("BERT_fine_tuned.bin",map_location = device))
 print("Model Loaded Successfully")
 
 print("Prediction started")
-y_query_texts, y_pred, y_pred_probs = get_predictions(
-            model,
-            test_data_loader
-)
+y_query_texts, y_pred, y_pred_probs = get_predictions(model, test_data_loader)
 prediction = pd.DataFrame(df.values.tolist(), columns = ["qid","query"])
 prediction['female_probability'] = y_pred_probs[:, 0]
 prediction['male_probability'] = y_pred_probs[:, 1]
