@@ -91,7 +91,7 @@ test_data_loader = create_data_loader(df, tokenizer, MAX_LEN, TEST_BATCH_SIZE)
 #Loading the fine-tuned model
 print("Loading the Model")
 model = BertForSequenceClassification.from_pretrained(PRE_TRAINED_MODEL_NAME, num_labels = 3)
-model.load_state_dict(torch.load("BERT_fine_tuned.bin",map_location = device))
+model.load_state_dict(torch.load("BERT_fine_tuned.bin", map_location = device))
 print("Model Loaded Successfully")
 
 print("Prediction started")
