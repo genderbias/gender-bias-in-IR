@@ -6,4 +6,4 @@ This repository contains the code and resources for detecting the gender of quer
 ## Trained Model:
 You can also use the fine-tuned BERT model for query gender identification [here](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing).
 ## Results:
-We have 
+Psychological characteristics for queires of each group can be found in Quantifying Psychological Characteristics folder.
