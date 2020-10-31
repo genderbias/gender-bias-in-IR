@@ -8,4 +8,4 @@ The MS MARCO Dev set queries that have been labelled by BERT can be found in Pre
 ## Trained Model:
 You can also use the fine-tuned BERT model for query gender identification task [here](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing).
 ## Results:
-Psychological characteristics for queires of each group can be found in Quantifying Psychological Characteristics folder.
+Psychological characteristics for queries of each group can be found in Quantifying Psychological Characteristics folder.
