@@ -1,5 +1,5 @@
 # Exploring Gender Biases in Information Retrieval Relevance Judgement Datasets
-This repository contains the code and resources for detecting the gender of queries (Female, Male, Neutral) along with the their relevance judgement documents' psychological characteristic. 
+This repository contains the code and resources for detecting the gender of queries (Female, Male, Neutral) along with their relevance judgement documents' psychological characteristic. 
 ## Code:
 - codes/train.py: The code for fine-tuning BERT model on the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv).
 - codes/predict.py: You can use this code to identify the gender of the queries by the fine-tuned model.
