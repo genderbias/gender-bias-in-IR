@@ -35,5 +35,5 @@ The following table illustrates a few queries labeled using our fine-tuned BERT 
 
 
 ## Psychological Characteristics Quantification
-Our approach for quantifying bias is based on measuring different psychological characteristics of the relevance judgement documents associated with each query. To investigate this, we employ Linguistic Inquiry and Word Count (LIWC) text analytics toolkit to compute the degree to which different psychological characteristics are observed in relevance judgement documents. These Psychological characteristics related to the queries of each group can be found in `results/psychological analysis` folder.
+Our approach for quantifying bias is based on measuring different psychological characteristics of the relevance judgement documents associated with each query. To investigate this, we employ Linguistic Inquiry and Word Count (LIWC) text analytics toolkit to compute the degree to which different psychological characteristics are observed in relevance judgement documents. These Psychological characteristics related to the queries of each group can be found in [`results/psychological analysis`](https://github.com/genderbias/gender-bias-in-relevance-judgements/tree/main/results/psychological%20analysis) folder.
 
