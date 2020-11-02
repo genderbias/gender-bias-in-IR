@@ -1,6 +1,6 @@
 # Exploring Gender Biases in Information Retrieval Relevance Judgement Datasets
 This repository contains the code and resources for detecting the gender of queries (Female, Male, Neutral) along with psychological characteristics of their relevance judgement documents. 
-## Query Gender Identification:
+## Query Gender Identification and Labeling
 As the first step and in order to be able to label queries based on their gender at scale, we employed the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv) released by Navid Rekabsaz to train relevant classifiers. This dataset consists of 742 female, 1,202 male and 1,765 neutral queries. We removed the 41 queries related to the "Other or Multiple Genders" class as there were not sufficient instances to train a classifier. Substequently, we trained various types of  classifiers on this dataset and in order to evaluate the performance of the classifiers, we adopt a 5-fold cross-validation strategy.
 |          Category         |        Classifier       |  Accuracy | Female F1-Score | Male F1-Score | Neutral F1-Score |
 |:-------------------------:|:-----------------------:|:---------:|:--------:|:--------:|:-------:|
@@ -34,14 +34,7 @@ Aftering using fine-tuned BERT, we ended up with 48,200 neutral queries, 2,222 m
 - `codes/predict.py`: The code for predicting the gender of queries using fine-tuned BERT.
 ### Fine_Tuned Model
 You can also use the [fine-tuned BERT model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing), which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task. You can load the model and fine-tune it using `code\train.py` and also predict the gender of queries by running `codes/predict.py`.
-
-
-
-
-
-- codes/train.py: The code for fine-tuning BERT model on the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv).
-- codes/predict.py: You can use this code to identify the gender of the queries by the fine-tuned model.
-## Trained Model:
+## Psychological Characteristics
 You can also use the fine-tuned BERT model for your query gender identification task [here](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing).
 ## Results:
 Psychological characteristics related to the queries of each group can be found in Quantifying Psychological Characteristics folder.
