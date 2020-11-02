@@ -19,12 +19,12 @@ performance for query gender identification. Finally, for the purpose of measuri
 Aftering using fine-tuned BERT, we ended up with 48,200 neutral queries, 2,222 male queries, and 1,405 female queries. To have a balanced setup, we retained all 1,405 female queries and randomly selected 1,405 male and 1,405 neutral queries from the other two classes (the results can be found in `Prediction Results` folder). In the table bellow you can see some of the identified queries by Bert.
 | QID     | Query                                        | Predicted Gender |
 |---------|----------------------------------------------|------------------|
-| 80095   | Can you take naproxen during pregnancy       | Female           |
-| 14757   | aimee osbourne net worth                     | Female           |
-| 1055525 | what is estrogen dominance in women          | Female           |
-| 189154  | foods that can prevent prostate cancer       | Male             |
-| 11251   | adam devine net worth                        | Male             |
-| 227637  | what depletes testosterone in men            | Male             |
+| 80095   | Can you take naproxen during **pregnancy**       | Female           |
+| 14757   | **aimee osbourne** net worth                     | Female           |
+| 1055525 | what is **estrogen** dominance in **women**          | Female           |
+| 189154  | foods that can prevent **prostate** cancer       | Male             |
+| 11251   | **adam devine** net worth                        | Male             |
+| 227637  | what depletes **testosterone** in **men**            | Male             |
 | 40234   | average percentage of accepted scholarships  | Neutral          |
 | 22992   | are humans still considered animals          | Neutral          |
 | 362845  | how to get students loans without a cosigner | Neutral          |
