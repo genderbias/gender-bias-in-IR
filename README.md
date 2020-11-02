@@ -13,13 +13,29 @@ As the first step and in order to be able to label queries based on their gender
 |      Static Embeddings    |         Word2Vec        |   0.757   |   0.626  |   0.756  |  0.809  |
 |                           |         fastText        |   0.750   |   0.615  |   0.759  |  0.792  |
 
-In the table above the performance of each of the developed classifiers is reported. As shown the uncased fine-tuned BERT model shows the best
-performance for query gender identification.
+In the table above the performance of each of the developed classifiers is reported. As shown the uncased **fine-tuned BERT** model shows the best
+performance for query gender identification. Finally, for the purpose of measuring bias in relevance judgements, we used our best-performed model to identify the gender of queries in MS MARCO Dev set that had at least one related human-judged relevance judgement document - equivalent to 51,827 queries. Note that, the queries of gender-annotated dataset were removed from this dataset to avoid unintended leakage.
+### Prediction Results
+Aftering using fine-tuned BERT, we ended up with 48,200 neutral queries, 2,222 male queries, and 1,405 female queries. To have a balanced setup, we retained all 1,405 female queries and randomly selected 1,405 male and 1,405 neutral queries from the other two classes (the results can be found in `Prediction Results` folder). In the table bellow you can see some of the identified queries by Bert.
+| QID     | Query                                        | Predicted Gender |
+|---------|----------------------------------------------|------------------|
+| 80095   | Can you take naproxen during pregnancy       | Female           |
+| 14757   | aimee osbourne net worth                     | Female           |
+| 1055525 | what is estrogen dominance in women          | Female           |
+| 189154  | foods that can prevent prostate cancer       | Male             |
+| 11251   | adam devine net worth                        | Male             |
+| 227637  | what depletes testosterone in men            | Male             |
+| 40234   | average percentage of accepted scholarships  | Neutral          |
+| 22992   | are humans still considered animals          | Neutral          |
+| 362845  | how to get students loans without a cosigner | Neutral          |
+
 ### Code
-- `code\train.py`: The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
+- `code/train.py`: The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
 - `codes/predict.py`: The code for predicting the gender of queries using fine-tuned BERT.
 ### Fine_Tuned Model
-You can also use the [fine-tuned BERT model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing), which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task.
+You can also use the [fine-tuned BERT model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing), which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task. You can load the model and fine-tune it using `code\train.py` and also predict the gender of queries by running `codes/predict.py`.
+
+
 
 
 
