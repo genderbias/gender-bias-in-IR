@@ -1,7 +1,20 @@
 # Exploring Gender Biases in Information Retrieval Relevance Judgement Datasets
 This repository contains the code and resources for detecting the gender of queries (Female, Male, Neutral) along with psychological characteristics of their relevance judgement documents. 
 ## Query Gender Identification:
-As the first step and in order to be able to label gendered queries at scale, we employed the dataset released by Navid Rekabsaz. The [dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv) consists of 742 female, 1,202 male and 1,765 neutral queries. We removed the 41 queries related to the "Other or Multiple Genders" class as there were not sufficient instances to train a classifier.
+As the first step and in order to be able to label queries based on their gender at scale, we employed the dataset released by Navid Rekabsaz to train relevant classifiers. This [dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv) consists of 742 female, 1,202 male and 1,765 neutral queries. We removed the 41 queries related to the "Other or Multiple Genders" class as there were not sufficient instances to train a classifier. Substequently, we trained various types of  classifiers on this dataset to identify the gender of queries which are shown bellow:
+|          Category         |        Classifier       |  Accuracy | F1-Score |          |         |
+|:-------------------------:|:-----------------------:|:---------:|:--------:|:--------:|:-------:|
+|                           |                         |           |  Female  |   Male   | Neutral |
+|      Dynamic Embeddings   |    BERT_base_uncased    |   0.856   |   0.816  |   0.872  |  0.862  |
+|                           | DistilBERT_base_uncased |   0.847   |   0.815  |   0.861  |  0.853  |
+|                           |         RoBERTa         |   0.810   |   0.733  |   0.820  |  0.836  |
+|                           |  DistilBERT_base_cased  |   0.800   |   0.730  |   0.823  |  0.833  |
+|                           |     BERT_base_cased     |   0.797   |   0.710  |   0.805  |  0.827  |
+|                           |     XLNet_base_cased    |   0.795   |   0.710  |   0.805  |  0.826  |
+|      Static Embeddings    |         Word2Vec        |   0.757   |   0.626  |   0.756  |  0.809  |
+|                           |         fastText        |   0.750   |   0.615  |   0.759  |  0.792  |
+
+
 
 
 - codes/train.py: The code for fine-tuning BERT model on the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv).
