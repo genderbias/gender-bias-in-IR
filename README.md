@@ -19,7 +19,7 @@ performance for query gender identification.
 - `code\train.py`: The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
 - `codes/predict.py`: The code for predicting the gender of queries using fine-tuned BERT.
 ### Fine_Tuned Model
-You can also use the fine-tuned BERT model, which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task [here](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing)
+You can also use the [fine-tuned BERT model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing), which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task.
 
 
 
