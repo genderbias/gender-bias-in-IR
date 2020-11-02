@@ -21,15 +21,9 @@ The following table illustrates a few queries labeled using our fine-tuned BERT 
 |---------|----------------------------------------------|------------------|
 | 80095   | Can you take naproxen during **pregnancy**       | Female           |
 | 14757   | **aimee osbourne** net worth                     | Female           |
-| 1055525 | what is **estrogen** dominance in **women**          | Female           |
 | 189154  | foods that can prevent **prostate** cancer       | Male             |
 | 11251   | **adam devine** net worth                        | Male             |
-| 227637  | what depletes **testosterone** in **men**            | Male             |
 | 40234   | average percentage of accepted scholarships  | Neutral          |
-| 22992   | are humans still considered animals          | Neutral          |
-| 362845  | how to get students loans without a cosigner | Neutral          |
-
-
 
 ### Code
 - **Training** - [`code/train.py`](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/code/train.py): The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
