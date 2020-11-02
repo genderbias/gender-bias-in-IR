@@ -15,8 +15,12 @@ As the first step and in order to be able to label queries based on their gender
 
 In the table above the performance of each of the developed classifiers is reported. As shown the uncased fine-tuned BERT model shows the best
 performance for query gender identification.
-### Model Construction
-In order to fine-tune BERT on queries_gender_annotated dataset or any other dataset you can run `code\train.py` which can be found in `code` folder 
+### Code
+- `code\train.py`: The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
+- `codes/predict.py`: The code for predicting the gender of queries using fine-tuned BERT.
+### Fine_Tuned Model
+You can also use the fine-tuned BERT model, which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task [here](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing)
+
 
 
 - codes/train.py: The code for fine-tuning BERT model on the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv).
