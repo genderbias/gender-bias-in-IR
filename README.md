@@ -31,7 +31,7 @@ The following table illustrates a few queries labeled using our fine-tuned BERT 
 
 ### Code
 - `code/train.py`: The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
-- `codes/predict.py`: The code for predicting the gender of queries using fine-tuned BERT.
+- `codes/predict.py`: In any case that you do not want to train the model, you can download the pre-trianed model and use predict.py  for predicting the gender of queries.
 ### Fine_Tuned Model
 You can also use the [fine-tuned BERT model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing), which has been already trained on queries_gender_annotated dataset, as your pre-trained model and use it for your query gender identification task. You can load the model and fine-tune it using `code/train.py` and also predict the gender of queries by running `codes/predict.py`.
 ## Psychological Characteristics Quantification
