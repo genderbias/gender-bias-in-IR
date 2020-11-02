@@ -15,7 +15,7 @@ As the first step and in order to be able to label queries based on their gender
 
 In the table above the performance of each of the developed classifiers is reported. As shown the uncased fine-tuned BERT model shows the best
 performance for query gender identification.
-###Training Step
+### Training Step
 In order to train BERT on the dataset you can find the code ....
 
 
