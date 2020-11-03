@@ -72,6 +72,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
   </tr>
 </tbody>
 </table>
+
 In the table above the performance of each of the developed classifiers is reported. As shown the uncased **fine-tuned BERT** model shows the best
 performance for query gender identification. Finally, for the purpose of measuring bias in relevance judgements, we used our best-performed model to identify the gender of queries in MS MARCO Dev set that had at least one related human-judged relevance judgement document - equivalent to 51,827 queries. Note that, the queries of gender-annotated dataset were removed from this dataset to avoid unintended leakage.
 
