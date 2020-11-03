@@ -15,9 +15,9 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 <table>
     <thead>
         <tr>
-            <th>Category</th>
-            <th>Classifier</th>
-            <th>Accuracy</th>
+            <th rowspan=2>Category</th>
+            <th rowspan=2>Classifier</th>
+            <th ros=span=2>Accuracy</th>
             <th>F1-Score</th>
         </tr>
     </thead>
