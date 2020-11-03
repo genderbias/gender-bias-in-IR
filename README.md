@@ -76,13 +76,13 @@ In the table above the performance of each of the developed classifiers is repor
 performance for query gender identification. Finally, for the purpose of measuring bias in relevance judgements, we used our best-performed model to identify the gender of queries in MS MARCO Dev set that had at least one related human-judged relevance judgement document - equivalent to 51,827 queries. Note that, the queries of gender-annotated dataset were removed from this dataset to avoid unintended leakage.
 
 The following table illustrates a few queries labeled using our fine-tuned BERT classifier. Here is all the the [1405 female](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/results/identified%20gendered%20queries/female_queries.csv), [1405 male](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/results/identified%20gendered%20queries/male_queries.csv), and [1405 neutral](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/results/identified%20gendered%20queries/neutral_queries.csv) labeled queries.
-| QID     | Query                                        | Predicted Gender |
+|QID     |Query                                        |Predicted Gender |
 |---------|----------------------------------------------|------------------|
-| 80095   | Can you take naproxen during **pregnancy**       | Female           |
-| 14757   | **aimee osbourne** net worth                     | Female           |
-| 189154  | foods that can prevent **prostate** cancer       | Male             |
-| 11251   | **adam devine** net worth                        | Male             |
-| 40234   | average percentage of accepted scholarships  | Neutral          |
+|80095   |Can you take naproxen during **pregnancy**       |Female           |
+|14757   |**aimee osbourne** net worth                     |Female           |
+|189154  |foods that can prevent **prostate** cancer       |Male             |
+|11251   |**adam devine** net worth                        |Male             |
+|40234   |average percentage of accepted scholarships  |Neutral          |
 
 ### Code
 - **Training** - [`code/train.py`](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/code/train.py): The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
