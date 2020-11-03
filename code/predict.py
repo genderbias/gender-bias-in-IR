@@ -85,10 +85,10 @@ def get_predictions(model, data_loader):
 
 
 #Reading MSMarco dev set queries (these queires do not have label)
-df = pd.read_csv("msmarco.csv")
+df = pd.read_csv("msmarco.csv") # a dataframe containing the queries
 test_data_loader = create_data_loader(df, tokenizer, MAX_LEN, TEST_BATCH_SIZE)
 
-#Loading the fine-tuned model
+#Loading the fine-tuned model - you can download the model from https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing
 print("Loading the Model")
 model = BertForSequenceClassification.from_pretrained(PRE_TRAINED_MODEL_NAME, num_labels = 3)
 model.load_state_dict(torch.load("BERT_fine_tuned.bin", map_location = device))
