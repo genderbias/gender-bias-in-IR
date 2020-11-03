@@ -15,10 +15,10 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
   <tr>
     <td class="tg-0lax" rowspan="6"><br><br>Dynamic Embeddings<br></td>
     <td class="tg-0lax">BERT (base uncased)</td>
-    <td class="tg-l2oz">0.856</td>
-    <td class="tg-l2oz">0.816</td>
-    <td class="tg-l2oz">0.872</td>
-    <td class="tg-l2oz">0.862</td>
+    <td class="tg-l2oz"><b>0.856</td>
+    <td class="tg-l2oz"><b>0.816</td>
+    <td class="tg-l2oz"><b>0.872</td>
+    <td class="tg-l2oz"><b>0.862</td>
   </tr>
   <tr>
     <td class="tg-0lax">DistilBert (base uncased)</td>
