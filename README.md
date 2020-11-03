@@ -12,32 +12,85 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 |                           | XLNet_base_cased    |   0.795|   0.710|   0.805|  0.826|
 |Static Embeddings    | Word2Vec        |   0.757|   0.626|   0.756|  0.809|
 |                           | fastText        |   0.750|   0.615|   0.759|  0.792|
-<table>
-    <thead>
-        <tr>
-            <th rowspan=2>Category</th>
-            <th rowspan=2>Classifier</th>
-            <th rowspan=2>Accuracy</th>
-            <th colspan=3>F1-Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
-        </tr>
-        <tr>
-            <td>L3 Name B</td>
-        </tr>
-        <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
-        </tr>
-        <tr>
-            <td>L3 Name D</td>
-        </tr>
-    </tbody>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-lqy6{text-align:right;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Category</th>
+    <th class="tg-0lax">Classifier</th>
+    <th class="tg-0lax">Accuracy</th>
+    <th class="tg-baqh" colspan="3">F1-Score</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax" rowspan="6">\<br><br><br><br><br><br>Dynamic Embeddings<br></td>
+    <td class="tg-0lax">BERT (base uncased)</td>
+    <td class="tg-lqy6">0.856</td>
+    <td class="tg-lqy6">0.816</td>
+    <td class="tg-lqy6">0.872</td>
+    <td class="tg-lqy6">0.862</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">DistilBert (base uncased)</td>
+    <td class="tg-lqy6">0.847</td>
+    <td class="tg-lqy6">0.815</td>
+    <td class="tg-lqy6">0.861</td>
+    <td class="tg-lqy6">0.853</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">RoBERTa</td>
+    <td class="tg-lqy6">0.810</td>
+    <td class="tg-lqy6">0.733</td>
+    <td class="tg-lqy6">0.820</td>
+    <td class="tg-lqy6">0.836</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">DistilBert (base cased)</td>
+    <td class="tg-lqy6">0.800</td>
+    <td class="tg-lqy6">0.730</td>
+    <td class="tg-lqy6">0.823</td>
+    <td class="tg-lqy6">0.833</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">BERT (base cased)</td>
+    <td class="tg-lqy6">0.797</td>
+    <td class="tg-lqy6">0.710</td>
+    <td class="tg-lqy6">0.805</td>
+    <td class="tg-lqy6">0.827</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">XLNet (base cased)</td>
+    <td class="tg-lqy6">0.795</td>
+    <td class="tg-lqy6">0.710</td>
+    <td class="tg-lqy6">0.805</td>
+    <td class="tg-lqy6">0.826</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" rowspan="2"><br>Static Embeddings</td>
+    <td class="tg-0lax">Word2Vec</td>
+    <td class="tg-lqy6">0.757</td>
+    <td class="tg-lqy6">0.626</td>
+    <td class="tg-lqy6">0.756</td>
+    <td class="tg-lqy6">0.809</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">fastText</td>
+    <td class="tg-lqy6">0.750</td>
+    <td class="tg-lqy6">0.615</td>
+    <td class="tg-lqy6">0.759</td>
+    <td class="tg-lqy6">0.792</td>
+  </tr>
+</tbody>
 </table>
 In the table above the performance of each of the developed classifiers is reported. As shown the uncased **fine-tuned BERT** model shows the best
 performance for query gender identification. Finally, for the purpose of measuring bias in relevance judgements, we used our best-performed model to identify the gender of queries in MS MARCO Dev set that had at least one related human-judged relevance judgement document - equivalent to 51,827 queries. Note that, the queries of gender-annotated dataset were removed from this dataset to avoid unintended leakage.
