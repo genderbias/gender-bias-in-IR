@@ -5,7 +5,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 <table>
 <thead>
   <tr>
-    <th style="color:red;" class="tg-0lax">Category</th>
+    <th style="text-align: right;" class="tg-0lax">Category</th>
     <th class="tg-0lax">Classifier</th>
     <th class="tg-0lax">Accuracy</th>
     <th class="tg-baqh" colspan="3">F1-Score</th>
