@@ -84,6 +84,42 @@ The following table illustrates a few queries labeled using our fine-tuned BERT 
 |11251   |**adam devine** net worth                        |Male             |
 |40234   |average percentage of accepted scholarships  |Neutral          |
 
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">QID</th>
+    <th class="tg-0pky">Query</th>
+    <th class="tg-0pky">Predicted Gender</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">80095</td>
+    <td class="tg-0pky">can you take naproxen during pregnancy</td>
+    <td class="tg-0pky">Female</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">14757</td>
+    <td class="tg-0pky">aimee osbourne net worth</td>
+    <td class="tg-0pky">Female</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">189154</td>
+    <td class="tg-0pky">foods that can prevent prostate cancer</td>
+    <td class="tg-0pky">Male</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">11251</td>
+    <td class="tg-0pky">adam devine net worth</td>
+    <td class="tg-0pky">Male</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">40234</td>
+    <td class="tg-0pky">average percentage of accepted scholarships</td>
+    <td class="tg-0pky">Neutral</td>
+  </tr>
+</tbody>
+</table>
 ### Code
 - **Training** - [`code/train.py`](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/code/train.py): The code for fine-tuning BERT on queries_gender_annotated dataset or any other dataset.
 - **Predicting** - [`codes/predict.py`](https://github.com/genderbias/gender-bias-in-relevance-judgements/blob/main/code/predict.py): In any case that you do not want to train the model, you can download our [fine-tuned model](https://drive.google.com/file/d/1_YTRs4v5DVUGUffnRHS_3Yk4qteJKO6w/view?usp=sharing) and use `predict.py`  for predicting the gender of queries.
