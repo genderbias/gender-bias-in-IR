@@ -142,12 +142,12 @@ def get_predictions(model, data_loader):
 
 
 #Fine-Tuning the BERT on the Dataset
-result = open("BERT_model.txt", "w")
-df = pd.read_csv("queries_gender_annotated.csv", names = ["query", "label"])
+result = open("BERT_Tuninig_results.txt", "w")
+df = pd.read_csv("queries_gender_annotated.csv", names = ["query", "label"]) 
 labelEncoder = LabelEncoder()
 df['label'] = labelEncoder.fit_transform(df['label'])
 result.write("Shape of Dataset: {} \n".format(df.shape))
-wordlist = pd.read_csv("wordlist_gender_specific.csv")
+wordlist = pd.read_csv("gender_specific_wordlist.csv")
 wordlist['label'] = labelEncoder.fit_transform(wordlist['label'])
 df = pd.concat([df, wordlist], ignore_index = False)
 result.write("Shape of Dataset after concatination with wordlist: {} \n".format(df.shape))
@@ -182,5 +182,5 @@ for epoch in range(EPOCHS):
     result.write(f'Train loss {train_loss} accuracy {train_acc}')
     result.write("\n")
 
-torch.save(model.state_dict(), "BERT_model.bin")
+torch.save(model.state_dict(), "BERT_fine_tuned.bin")
 result.close()
