@@ -17,8 +17,8 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
         <tr>
             <th rowspan=2>Category</th>
             <th rowspan=2>Classifier</th>
-            <th ros=span=2>Accuracy</th>
-            <th>F1-Score</th>
+            <th rowspan=2>Accuracy</th>
+            <th colspan=3>F1-Score</th>
         </tr>
     </thead>
     <tbody>
