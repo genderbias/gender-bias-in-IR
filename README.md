@@ -12,16 +12,6 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 |                           | XLNet_base_cased    |   0.795|   0.710|   0.805|  0.826|
 |Static Embeddings    | Word2Vec        |   0.757|   0.626|   0.756|  0.809|
 |                           | fastText        |   0.750|   0.615|   0.759|  0.792|
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-lqy6{text-align:right;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -33,7 +23,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" rowspan="6">\<br><br><br><br><br><br>Dynamic Embeddings<br></td>
+    <td class="tg-0lax" rowspan="6"><br><br><br><br><br><br>Dynamic Embeddings<br></td>
     <td class="tg-0lax">BERT (base uncased)</td>
     <td class="tg-lqy6">0.856</td>
     <td class="tg-lqy6">0.816</td>
