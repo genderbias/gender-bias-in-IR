@@ -21,7 +21,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
     <td class="tg-l2oz"><b>0.862</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DistilBert (base uncased)</td>
+    <td class="tg-0lax">DistilBERT (base uncased)</td>
     <td class="tg-lqy6">0.847</td>
     <td class="tg-lqy6">0.815</td>
     <td class="tg-lqy6">0.861</td>
@@ -35,7 +35,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
     <td class="tg-lqy6">0.836</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DistilBert (base cased)</td>
+    <td class="tg-0lax">DistilBERT (base cased)</td>
     <td class="tg-lqy6">0.800</td>
     <td class="tg-lqy6">0.730</td>
     <td class="tg-lqy6">0.823</td>
