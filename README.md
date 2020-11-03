@@ -56,7 +56,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
     <td class="tg-lqy6">0.826</td>
   </tr>
   <tr>
-    <td class="tg-0lax" rowspan="2"><br>Static Embeddings</td>
+    <td class="tg-0lax" rowspan="2">Static Embeddings</td>
     <td class="tg-0lax">Word2Vec</td>
     <td class="tg-lqy6">0.757</td>
     <td class="tg-lqy6">0.626</td>
