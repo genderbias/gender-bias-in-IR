@@ -12,6 +12,7 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 |                           | XLNet_base_cased    |   0.795|   0.710|   0.805|  0.826|
 |Static Embeddings    | Word2Vec        |   0.757|   0.626|   0.756|  0.809|
 |                           | fastText        |   0.750|   0.615|   0.759|  0.792|
+
 <table class="tg">
 <thead>
   <tr>
@@ -23,12 +24,12 @@ In this work, we proposed a Query Gender classifier. As the first step and in or
 </thead>
 <tbody>
   <tr>
-    <td>rowspan="6"><br><br><br><br><br><br>Dynamic Embeddings<br></td>
-    <td>BERT (base uncased)</td>
-    <td>**0.856**</td>
-    <td>**0.816**</td>
-    <td>**0.872**</td>
-    <td>**0.862**</td>
+    <td class="tg-0lax" rowspan="6">\<br><br><br><br><br><br>Dynamic Embeddings<br></td>
+    <td class="tg-0lax">BERT (base uncased)</td>
+    <td class="tg-l2oz">0.856</td>
+    <td class="tg-l2oz">0.816</td>
+    <td class="tg-l2oz">0.872</td>
+    <td class="tg-l2oz">0.862</td>
   </tr>
   <tr>
     <td class="tg-0lax">DistilBert (base uncased)</td>
