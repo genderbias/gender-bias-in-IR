@@ -1,7 +1,7 @@
 # Exploring Gender Biases in Information Retrieval Relevance Judgement Datasets
 This repository contains the code and resources for detecting the gender of queries (Female, Male, Neutral) along with psychological characteristics of their relevance judgement documents. 
 ## Query Gender Identification and Labeling
-In this work, we proposed a Query Gender classifier. As the first step and in order to be able to label queries based on their gender at scale, we employed the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv) released by Navid Rekabsaz to train relevant classifiers. This dataset consists of 742 female, 1,202 male and 1,765 neutral queries. We trained various types of  classifiers on this dataset and in order to evaluate the performance of the classifiers, we adopt a 5-fold cross-validation strategy.
+In this work, we proposed a Query Gender classifier. As the first step and in order to be able to label queries based on their gender at scale, we employed the [gender-annotated dataset](https://github.com/navid-rekabsaz/GenderBias_IR/blob/master/resources/queries_gender_annotated.csv) released by Navid Rekabsaz and Markus Schedl to train relevant classifiers. This dataset consists of 742 female, 1,202 male and 1,765 neutral queries. We trained various types of  classifiers on this dataset and in order to evaluate the performance of the classifiers, we adopt a 5-fold cross-validation strategy.
 <table>
 <thead>
   <tr>
